@@ -1,4 +1,4 @@
-package features.lambda.a05;
+package features.lambda;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -6,7 +6,7 @@ import java.io.FileFilter;
 /***
  * Get files with extension .txt from a directory using lambda
  */
-public class GetFilesInDirUsingLambdaEnhanced {
+public class Demo05GetFilesInDirUsingLambdaEnhanced {
     public static void main(String[] args) {
 
         File dir = new File("/tmp");

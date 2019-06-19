@@ -1,4 +1,4 @@
-package features.lambda.a01;
+package features.lambda;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -6,7 +6,7 @@ import java.io.FileFilter;
 /***
  * Get files with extension .txt from a directory old way
  */
-public class GetFilesInDirOldWay {
+public class Demo01GetFilesInDirOldWay {
     public static void main(String[] args) {
         FileFilter textFileFilter = new TextFileFilter();
         File dir = new File("/tmp");

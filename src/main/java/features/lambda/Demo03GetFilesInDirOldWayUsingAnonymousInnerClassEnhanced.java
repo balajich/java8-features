@@ -1,4 +1,4 @@
-package features.lambda.a02;
+package features.lambda;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -7,18 +7,20 @@ import java.io.FileFilter;
  * Get files with extension .txt from a directory old way
  * Using Anonymous inner class
  */
-public class GetFilesInDirOldWayUsingAnonymousInnerClass {
+public class Demo03GetFilesInDirOldWayUsingAnonymousInnerClassEnhanced {
     public static void main(String[] args) {
-        //Create a anonymouse inner calls of FileFliter
-        FileFilter textFileFilter = new FileFilter() {
+
+        File dir = new File("/tmp");
+
+        //Get files in a directory that ends with txt extension
+        // Create Anonymous inner class and initialize it at same time
+
+        File[] files = dir.listFiles(new FileFilter() {
             @Override
             public boolean accept(File pathname) {
                 return pathname.getName().endsWith(".txt");
             }
-        };
-        File dir = new File("/tmp");
-        //Get files in a directory that ends with txt extension
-        File[] files = dir.listFiles(textFileFilter);
+        });
 
         //print all the files
         for (File file : files) {
