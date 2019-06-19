@@ -1,21 +1,14 @@
-package com.github.balajich.java8.lambda.a02;
+package features.lambda.a01;
 
 import java.io.File;
 import java.io.FileFilter;
 
 /***
  * Get files with extension .txt from a directory old way
- * Using Anonymous inner class
  */
-public class GetFilesInDirOldWayUsingAnonymousInnerClass {
+public class GetFilesInDirOldWay {
     public static void main(String[] args) {
-        //Create a anonymouse inner calls of FileFliter
-        FileFilter textFileFilter = new FileFilter() {
-            @Override
-            public boolean accept(File pathname) {
-                return pathname.getName().endsWith(".txt");
-            }
-        };
+        FileFilter textFileFilter = new TextFileFilter();
         File dir = new File("/tmp");
         //Get files in a directory that ends with txt extension
         File[] files = dir.listFiles(textFileFilter);
@@ -28,3 +21,12 @@ public class GetFilesInDirOldWayUsingAnonymousInnerClass {
     }
 }
 
+/**
+ * Implementing FileFilter interface
+ */
+class TextFileFilter implements FileFilter {
+    @Override
+    public boolean accept(File pathname) {
+        return pathname.getName().endsWith(".txt");
+    }
+}
