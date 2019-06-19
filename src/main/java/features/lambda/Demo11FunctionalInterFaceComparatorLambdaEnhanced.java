@@ -7,7 +7,7 @@ import java.util.List;
 /***
  * Using function interface comparator
  */
-public class Demo10FunctionalInterFaceComparatorLambdaEnhanced {
+public class Demo11FunctionalInterFaceComparatorLambdaEnhanced {
     public static void main(String[] args) throws InterruptedException {
         //Create a list of Strings
         List<String> list = Arrays.asList("***", "**", "****", "*");
