@@ -8,7 +8,7 @@ import java.util.List;
 /***
  * Using function interface comparator
  */
-public class Demo09FunctionInterFaceComparator {
+public class Demo09FunctionalInterFaceComparator {
     public static void main(String[] args) throws InterruptedException {
         //Create a anonymous comparator class and initialize it
         Comparator<String> comparator = new Comparator<String>() {

@@ -3,10 +3,10 @@ package features.lambda;
 /***
  * Create a thread using function interface Runnable
  */
-public class Demo06FunctionInterFaceThread {
+public class Demo07FunctionalInterFaceThreadEnhanced {
     public static void main(String[] args) throws InterruptedException {
-        //Create a Runnable anonymous class and instantiate it
-        Runnable r = new Runnable() {
+        // create a thread with anonymous inner class Runnable
+        Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 10; i++) {
@@ -14,10 +14,7 @@ public class Demo06FunctionInterFaceThread {
 
                 }
             }
-        };
-
-        // create a thread
-        Thread thread = new Thread(r);
+        });
         // Start thread
         thread.start();
         // wait till thread finishes

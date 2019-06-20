@@ -3,7 +3,7 @@ package features.lambda;
 /***
  * Create a thread using function interface Runnable
  */
-public class Demo08FunctionInterFaceThreadLambda {
+public class Demo08FunctionalInterFaceThreadLambda {
     public static void main(String[] args) throws InterruptedException {
         // create a thread using lambda expression
         Thread thread = new Thread(() -> {
