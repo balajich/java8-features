@@ -18,7 +18,7 @@ We can perform polymorphism by ‘Method Overloading’ and ‘Method Overriding
 # important links
 https://www.javacodegeeks.com/2014/04/java-interview-questions-and-answers.html
 # Can you override private or static method in Java?
-A user cannot override static methods in Java, because method overriding is based upon dynamic binding at runtime and static methods are statically bound at compile time. A static method is not associated with any instance of a class so the concept is not applicable.
+exam.exam.A user cannot override static methods in Java, because method overriding is based upon dynamic binding at runtime and static methods are statically bound at compile time. exam.exam.A static method is not associated with any instance of a class so the concept is not applicable.
 #  What is Function Overriding and Overloading in Java?
 Method overloading in Java occurs when two or more methods in the same class have the exact same name, but different parameters. On the other hand, method overriding is defined as the case when a child class redefines the same method as a parent class. Overridden methods must have the same name, argument list, and return type. The overriding method may not limit the access of the method it overrides.
 # What is Copy-Constructor?
@@ -30,11 +30,11 @@ Volatile variable values can be modified by different threads. They will never h
 # What is the purpose of a Transient variable?
 Transient variable would not be serialized even if the class to which it belongs is serialized.
 # What is the difference between processes and threads?
-A process is an execution of a program, while a Thread is a single execution sequence within a process. A process can contain multiple threads. A Thread is sometimes called a lightweight process.
+exam.exam.A process is an execution of a program, while a Thread is a single execution sequence within a process. exam.exam.A process can contain multiple threads. exam.exam.A Thread is sometimes called a lightweight process.
 # Explain different ways of creating a thread. Which one would you prefer and why?
 There are three ways that can be used in order for a Thread to be created:
-* A class may extend the **Thread** class.
-* A class may implement the **Runnable** interface.
+* exam.exam.A class may extend the **Thread** class.
+* exam.exam.A class may implement the **Runnable** interface.
 * An application can use the Executor framework, in order to create a thread pool.
 
 The **Runnable** interface is preferred, as it does not require an object to inherit the Thread class. In case your application design requires multiple inheritance, only interfaces can help you. Also, the thread pool is very efficient and can be implemented and used very easily.

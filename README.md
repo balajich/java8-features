@@ -1,9 +1,9 @@
 # java8-features
 Contains examples of Java 8 Features
 # Functional Interfaces
-* A functional interface is an interface with only one abstract method
+* exam.exam.A functional interface is an interface with only one abstract method
 * Methods from the Object class doesn't count
-* A functional interface can be annotated
+* exam.exam.A functional interface can be annotated
 * It is just here for convenience, the compiler can tell me whether the interface is functional or not
 * java.util.function contains rich set of functional interfaces
 # java.util.function 

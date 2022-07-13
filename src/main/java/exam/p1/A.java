@@ -1,19 +1,24 @@
 package exam.p1;
 
-import exam.p2.B;
-
 public class A {
-    public B b=null;
-    public A(){
-        b= new B();
+    private  int iPrivate;
+    protected int jProtected;
+    public int kPublic;
+    int lDefault;
+}
+class B extends A{
+    public void hello(){
+        System.out.println(jProtected);
+        System.out.println(kPublic);
+        System.out.println(lDefault);
     }
-    public void sayHello(){
-        System.out.println("Hello class A");
-    }
+}
 
-    public static void main(String[] args) {
-        System.out.println("This is call A in package p1");
+class Unreleated{
+    public void hello(){
         A a= new A();
-        a.b.sayHello();
+        System.out.println(a.jProtected);
+        System.out.println(a.kPublic);
+        System.out.println(a.lDefault);
     }
 }
