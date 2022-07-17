@@ -19,7 +19,7 @@ public class CreatingListUsingVarArgs {
         list4.add("C");
         System.out.println(list4);
 
-        //Sorting array
+        //exam.Sorting array
         Collections.sort(list4);
         System.out.println(list4);
 
