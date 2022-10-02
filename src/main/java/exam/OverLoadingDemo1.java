@@ -1,7 +1,8 @@
-import java.util.List;
-import java.util.Objects;
+package exam;
 
-public class OverLoadingDemo {
+import java.util.List;
+
+public class OverLoadingDemo1 {
     static void print(List<?> list){
         for(Object e: list){
             System.out.println(e);
